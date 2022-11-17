@@ -1,5 +1,6 @@
 from google_play_scraper import Sort, reviews
 import argparse
+from collections import Counter
 
 parser = argparse.ArgumentParser()
 parser.add_argument('appid')
@@ -22,4 +23,15 @@ result, _ = reviews(
     continuation_token=continuation_token # defaults to None(load from the beginning)
 )
 
-print(result)
+reviews = ""
+for review in result:
+    reviews += review['content'] + "\n"
+
+# split() returns list of all the words in the string
+split_it = reviews.split()
+# Pass the split_it list to instance of Counter class.
+Counter = Counter(split_it)
+# most_common() produces k frequently encountered
+# input values and their respective counts.
+most_occur = Counter.most_common(4)
+print(most_occur)

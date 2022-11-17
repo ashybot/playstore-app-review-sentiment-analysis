@@ -1,7 +1,12 @@
 from google_play_scraper import Sort, reviews
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('appid')
+args = parser.parse_args()
 
 result, continuation_token = reviews(
-    'co.triller.droid',
+    args.appid,
     lang='en', # defaults to 'en'
     country='us', # defaults to 'us'
     sort=Sort.MOST_RELEVANT, # defaults to Sort.NEWEST
@@ -13,7 +18,7 @@ result, continuation_token = reviews(
 # it will crawl the items after 3 review items.
 
 result, _ = reviews(
-    'co.triller.droid',
+    args.appid,
     continuation_token=continuation_token # defaults to None(load from the beginning)
 )
 

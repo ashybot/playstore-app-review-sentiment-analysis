@@ -14,10 +14,17 @@ import re
 import emoji
 from pandas_profiling import ProfileReport
 import datetime
+import argparse
 nltk.download('stopwords')
 
+parser = argparse.ArgumentParser()
+parser.add_argument('jsonfilename')
+parser.add_argument('outputfilename')
+parser.add_argument('htmlfilename')
+args = parser.parse_args()
+
 # open json file
-f = open("triller_reviews.json","r")
+f = open(args.jsonfilename,"r")
 # Return json object as a dictionary
 data = json.loads(json.dumps(f.read()))
 
@@ -28,7 +35,7 @@ print(len(data))
 df=pd.DataFrame(eval(data))
 
 prof = ProfileReport(df)
-prof.to_file(output_file='output.html')
+prof.to_file(output_file=args.htmlfilename)
 
 df=df[["reviewCreatedVersion", "score","content", "thumbsUpCount"]]
 
@@ -101,7 +108,7 @@ def senti_sc(x):
        return TextBlob(x).sentiment
 
 df["Sentiment_score"]= df["extracted_emojis"].apply(senti_sc)
-ss = open("sentiment_score_triller.txt", "w")
+ss = open(args.outputfilename, "w")
 ss.write(str(df.loc[0:,['extracted_emojis','Sentiment_score']]))
 ss.close()
 f.close()

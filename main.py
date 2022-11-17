@@ -18,14 +18,19 @@ json_str = "_reviews.json"
 txt_str = "sentiment_score_%s.txt"
 html_str = "output_%s.html"
 
-
+'''
+# For scraping app reviews
 for appid, filename in apps.items():
     file = open(filename, "w")
     subprocess.run(["python3", "get_reviews.py", appid], stdout=file)
 
-
+# For performing sentiment analysis
 for name in app_names:
     json_name = name + json_str
     txt_name = txt_str % name
     html_name = html_str % name
     subprocess.run(["python3", "sentiment_analysis.py", json_name, txt_name, html_name])
+'''
+# For finding common words
+for appid in apps:
+    subprocess.run(["python3", "get_reviews.py", appid])

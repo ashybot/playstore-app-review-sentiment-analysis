@@ -999,3 +999,5 @@
 997  myself am an event planner and i absolutely lo...                          (0.6162109375, 0.4)
 998  best app man check out youngboymalu you won't ...                                   (1.0, 0.3)
 999  i love this so much it is so fun to make video...                                   (0.4, 0.4)
+
+Avg sentiment polarity: 0.451505311517331

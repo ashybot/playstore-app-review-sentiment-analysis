@@ -999,3 +999,5 @@
 997  i am really enjoying re-connecting with attorn...                 (0.31875, 0.6000000000000001)
 998  best of the best by all means, easy and friend...     (0.7020833333333334, 0.48333333333333334)
 999  it's good and user friendly... however sometim...                   (0.16499999999999998, 0.48)
+
+Avg sentiment polarity: 0.4042974202742105

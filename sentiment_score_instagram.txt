@@ -999,3 +999,5 @@
 997  dear instagram team greetings please kindly ta...                                 (0.35, 0.625)
 998  the app is very easy to use and it's video and...                  (0.4345833333333333, 0.7875)
 999  being new to ig i am struggling to learn it......      (0.2681818181818182, 0.6772727272727272)
+
+Avg sentiment polarity: 0.34314576716851186

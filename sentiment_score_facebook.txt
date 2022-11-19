@@ -999,3 +999,5 @@
 997  de app of facebook is advantageous to both nat...    (0.05384615384615385, 0.19903846153846153)
 998  updated yesterday. my push notifications, whic...                                 (0.02, 0.485)
 999  this app helps me a lot in terms of sending an...     (0.12708333333333333, 0.3520833333333333)
+
+Avg sentiment polarity: 0.2954246140399235

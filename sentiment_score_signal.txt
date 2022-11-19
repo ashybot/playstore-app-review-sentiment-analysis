@@ -999,3 +999,5 @@
 997  the only truly secure messaging app i have com...                (0.159375, 0.5314903846153847)
 998  so far so good though i'd prefer they add more...                   (0.44000000000000006, 0.82)
 999                                solid and reliable.                                    (0.0, 0.1)
+
+Avg sentiment polarity: 0.36516486024609085

@@ -999,3 +999,5 @@
 997  great for getting accurate news. facebook cens...     (0.46666666666666673, 0.5277777777777778)
 998  user friendly, aesthetically pleasing. fun!! n...     (0.5416666666666666, 0.39999999999999997)
 999            beats tumblr like they stole something!                                    (0.0, 0.0)
+
+Avg sentiment polarity: 0.331331013227778

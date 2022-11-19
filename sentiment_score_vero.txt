@@ -999,3 +999,5 @@
 997  it is good. finally i can talk to zack snyder ...                                   (0.35, 0.8)
 998  people understand it's in beta!!!! of course i...    (-0.21666666666666667, 0.5777777777777778)
 999                       only because of zack snyder.                                    (0.0, 1.0)
+
+Avg sentiment polarity: 0.3209522410093383

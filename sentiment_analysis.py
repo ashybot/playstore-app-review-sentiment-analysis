@@ -108,7 +108,13 @@ def senti_sc(x):
        return TextBlob(x).sentiment
 
 df["Sentiment_score"]= df["extracted_emojis"].apply(senti_sc)
+
 ss = open(args.outputfilename, "w")
 ss.write(str(df.loc[0:,['extracted_emojis','Sentiment_score']]))
+ss.write("\n\nAvg sentiment polarity: ")
+total_sentiment = 0
+for sentiment in df["Sentiment_score"]:
+    total_sentiment += sentiment[0]
+ss.write(str(total_sentiment/len(df["Sentiment_score"])))
 ss.close()
 f.close()

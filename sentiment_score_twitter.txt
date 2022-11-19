@@ -999,3 +999,5 @@
 997  a great news network! it is really good, thank...      (0.43732993197278913, 0.599404761904762)
 998  hi there, i have an issue with my twitter app,...                                   (0.25, 0.5)
 999  i love this app! it helps me keep in touch wit...      (0.5149100378787879, 0.6326515151515152)
+
+Avg sentiment polarity: 0.3625771764000253

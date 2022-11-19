@@ -999,3 +999,5 @@
 997  my stress reliever is in this application. so ...                                  (0.345, 0.1)
 998  i love this app and the friends i've been able...                                 (0.5, 0.6125)
 999  there is no ads and you can rome free and buy ...                                   (0.4, 0.75)
+
+Avg sentiment polarity: 0.34597129877611393
